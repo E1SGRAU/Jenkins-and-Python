@@ -73,3 +73,11 @@ with open(r"D:\It Step\Python\HomeWork\test.txt", 'w') as file:
     file.write(data)
     print(data)
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+way = r'D:\It Step\Python\test.txt'
+check = os.path.exists(way) # чи існує шлях
+#print(check)
+# видаляємо файл
+if check == True:
+    os.remove(way)
+else:
+    pass
