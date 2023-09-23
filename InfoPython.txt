@@ -82,3 +82,12 @@ if check == True:
 else:
     pass
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+import os
+way = r'D:\It Step'
+for folderName, subfolders, filenames in os.walk(way, True):
+    print("Теперішня папка - " + folderName)
+    for subfolder in subfolders:
+        print("Підпапка папки"+ folderName + ":" + subfolder)
+    for filename in filenames:
+        print('Файли в папці '+ folderName + ":" + filename)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
