@@ -91,3 +91,16 @@ for folderName, subfolders, filenames in os.walk(way, True):
     for filename in filenames:
         print('Файли в папці '+ folderName + ":" + filename)
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+import os
+way = r'D:\It Step\Python\HomeWork'
+for folderName, subfolders, filenames in os.walk(way, True):
+    print("Теперішня папка - " + folderName)
+    for filename in filenames:
+        print('Файли в папці '+ folderName + ":" + filename)
+        for file in filenames:
+            if file.endswith('.txt'):
+                try:
+                    os.remove(os.path.join(folderName,file))
+                except Exception as error:
+                    pass
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
