@@ -1,0 +1,32 @@
+--- --- --- --- --- --- --- --- --- --- ---
+--- Install Jenkins on the linux/ubuntu ---
+--- --- --- --- --- --- --- --- --- --- ---
+sudo apt update
+java --version
+sudo apt install default-jre
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+jenkins --version
+
+#Даємо права Jenkins
+sudo usermod -aG jenkins ubuntu
+sudo usermod -aG ubuntu jenkins
+sudo usermod -aG sudo jenkins
+cat /etc/group
+cat /etc/passwd
+
+--- --- --- --- --- --- --- --- --- --- ---
+--- Install AWS CLLI on the linux/ubuntu ---
+--- --- --- --- --- --- --- --- --- --- ---
+sudo apt -y install awscli
+sudo apt -y update
+
+#configure clli
+aws configure
+    #Enter -> AWS Access Key ID який можна буде взяти при створенні IAM user
+    #Enter -> AWS Secret Access Key який можна буде взяти при створенні IAM user
+    #Enter -> Default region name
+    #Enter -> Default output format: json
+exit
