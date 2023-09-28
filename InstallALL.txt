@@ -17,6 +17,10 @@ sudo usermod -aG sudo jenkins
 cat /etc/group
 cat /etc/passwd
 
+#Встановлюємо pip та бібліотеку HTTP-запитів
+sudo apt-get install python3-pip
+pip install requests
+
 --- --- --- --- --- --- --- --- --- --- ---
 --- Install AWS CLLI on the linux/ubuntu ---
 --- --- --- --- --- --- --- --- --- --- ---
