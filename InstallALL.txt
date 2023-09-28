@@ -20,6 +20,7 @@ cat /etc/passwd
 #Встановлюємо pip та бібліотеку HTTP-запитів
 sudo apt-get install python3-pip
 pip install requests
+pip install boto3
 
 --- --- --- --- --- --- --- --- --- --- ---
 --- Install AWS CLLI on the linux/ubuntu ---
