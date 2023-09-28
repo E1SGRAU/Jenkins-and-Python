@@ -1,0 +1,13 @@
+pipeline  {
+    agent any
+    stages {
+        stage("Run python app") {
+            steps {
+                echo 'Running ...'
+                dir('.'){
+                    sh " python3 script_pubinfo.py "
+                }
+            }
+        }
+    }
+}
