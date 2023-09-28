@@ -1,0 +1,3 @@
+Add user wthi Permissions policies > AdministratorAccess
+Відкрити Security credentials на створенному користувачемі та створити Access keys
+Отримані ключі краще зберегти в блокноті, так як доступ більше не нададуть
