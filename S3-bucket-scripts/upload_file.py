@@ -1,6 +1,7 @@
 import boto3
 import pathlib
 import io
+
 aws_region = "eu-north-1"
 s3_bucket_name = "alex13"
 
